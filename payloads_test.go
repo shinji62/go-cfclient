@@ -409,3 +409,59 @@ const listServicePayload = `{
       }
    ]
 }`
+
+const listUserProvidedServicesPayload = `{
+   "total_results": 2,
+   "total_pages": 1,
+   "prev_url": null,
+   "next_url": null,
+   "resources": [
+      {
+         "metadata": {
+            "guid": "d1e9e4e3-879f-4a58-a0b0-8a048296202b",
+            "url": "/v2/user_provided_service_instances/d1e9e4e3-879f-4a58-a0b0-8a048296202b",
+            "created_at": "2015-12-18T05:15:36Z",
+            "updated_at": "2015-12-18T07:39:09Z"
+         },
+         "entity": {
+            "name": "oracle-11-docker",
+            "credentials": {
+               "host": "192.168.99.100",
+               "password": "oracle",
+               "port": "49161",
+               "sid": "XE",
+               "username": "system"
+            },
+            "space_guid": "d9bbe6bf-79c2-4412-aa3d-98c51f7252b2",
+            "type": "user_provided_service_instance",
+            "syslog_drain_url": "",
+            "route_service_url": "",
+            "space_url": "/v2/spaces/d9bbe6bf-79c2-4412-aa3d-98c51f7252b2",
+            "service_bindings_url": "/v2/user_provided_service_instances/d1e9e4e3-879f-4a58-a0b0-8a048296202b/service_bindings",
+            "routes_url": "/v2/user_provided_service_instances/d1e9e4e3-879f-4a58-a0b0-8a048296202b/routes"
+         }
+      },
+      {
+         "metadata": {
+            "guid": "9bd08e19-bd9e-4db7-978e-687c33797c41",
+            "url": "/v2/user_provided_service_instances/9bd08e19-bd9e-4db7-978e-687c33797c41",
+            "created_at": "2016-01-08T07:14:19Z",
+            "updated_at": null
+         },
+         "entity": {
+            "name": "logs-yahoo",
+            "credentials": {
+               "projectid": "gwenn-yahoo",
+               "tagid": "tag-yahoo"
+            },
+            "space_guid": "a9f8d4e5-cfbb-4bc1-9a9b-8469a823cbb5",
+            "type": "user_provided_service_instance",
+            "syslog_drain_url": "",
+            "route_service_url": "",
+            "space_url": "/v2/spaces/a9f8d4e5-cfbb-4bc1-9a9b-8469a823cbb5",
+            "service_bindings_url": "/v2/user_provided_service_instances/9bd08e19-bd9e-4db7-978e-687c33797c41/service_bindings",
+            "routes_url": "/v2/user_provided_service_instances/9bd08e19-bd9e-4db7-978e-687c33797c41/routes"
+         }
+      }
+   ]
+}`
